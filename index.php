@@ -147,11 +147,15 @@
 		$headers = 'From: '. $_GET['email']  . "\r\n" .
     'Reply-To: '. $_GET['email'] . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-		if (mail($to,$subject,$message,$headers)) {
+		
+		try {
+			mail($to,$subject,$message,$headers);
 			echo("sent");
-		} else {
-			echo("error");
+		} catch (Exception $e) {
+			
+			echo($e->getMessage());
 		}
+		
 	}
 
 ?>
