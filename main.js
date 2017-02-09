@@ -7,7 +7,7 @@ $(document).ready(function() {		//do this when document has finished loading
 	    var href = $.attr(this, 'href');
 	    $("html, body").animate({
 	        scrollTop: $(href).offset().top
-	    }, 2000, function () {
+	    }, 1500, function () {
 	        window.location.hash = href;
 	    });
 	    return false;

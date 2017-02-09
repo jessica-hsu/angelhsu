@@ -116,6 +116,7 @@
 			<div class="bg" id="contact">
 				<div id="contact-form">
 					<form class="form-horizontal" name="myForm" id="myForm" method="get" action="">
+						<span id="alerts"></span>
 						<div class="form-group">
 							<label for="theirName">Name:</label>
 							<input id="theirName" type="text" class="form-control" name="theirName" placeholder="Your Name" >
@@ -125,19 +126,35 @@
 							<input id="subject" type="text" class="form-control" name="subject" placeholder="Subject">
 						</div>
 						<div class="form-group">
-							<label for="email">Name:</label>
+							<label for="email">Email:</label>
 							<input id="email" type="email" class="form-control" name="email" placeholder="Your Name">
 						</div>
 						<div class="form-group">
   							<label for="message">Message:</label>
   							<textarea class="form-control" rows="20" id="message" name="message"></textarea>
 						</div>
+						<button type="submit" class="btn btn-primary" name="submit" id="submit" value="Send" onsubmit="validate();">Send</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+<?php 
+	if (isset($_GET['submit'])) { 
+		$to = "oreocookie38@gmail.com";
+		$subject = $_GET['subject'];
+		$message = $_GET['message'];
+		$headers = 'From: '. $_GET['email']  . "\r\n" .
+    'Reply-To: '. $_GET['email'] . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+		if (mail($to,$subject,$message,$headers)) {
+			echo("sent");
+		} else {
+			echo("error");
+		}
+	}
 
+?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="main.js"></script>
 </body>
