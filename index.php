@@ -33,10 +33,10 @@
        			 	<ul class="nav navbar-nav">
          			</ul>
          			<ul class="nav navbar-nav navbar-right">
-         				<li><a id="" href="#bg1">About</a></li>
-         				<li><a id="" href="#bg2">Work Experience</a></li>         				
-         				<li><a id="" href="#bg3">Research & Publications</a></li>
-         				<li><a id="" href="#bg4">Contact</a></li>
+         				<li><a href="#bg1">About</a></li>
+         				<li><a href="#bg2">Work Experience</a></li>         				
+         				<li><a href="#bg3">Research & Publications</a></li>
+         				<li><a href="#bg4">Contact</a></li>
          			</ul>
       			</div>
     		</div>
@@ -115,7 +115,7 @@
 			<div class="section" id="s3">Contact</div>
 			<div class="bg" id="contact">
 				<div id="contact-form">
-					<form class="form-horizontal" name="myForm" id="myForm" method="get" action="">
+					<form class="form-horizontal" name="myForm" id="myForm" method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 						<span id="alerts"></span>
 						<div class="form-group">
 							<label for="theirName">Name:</label>

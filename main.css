@@ -26,9 +26,10 @@ html, body {
 }
 
 nav {
-	padding: 0.5% 5%;
+	padding: 0.3% 5%;
 	font-family: Antic Slab;
 	font-weight: bold;
+	font-size: 110%;
 }
 
 .section {
