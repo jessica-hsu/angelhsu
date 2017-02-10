@@ -115,7 +115,17 @@
 			<div class="section" id="s3">Contact</div>
 			<div class="bg" id="contact">
 				<div id="contact-form">
-					<form class="form-horizontal" name="myForm" id="myForm" method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+					<span>I can be reached via:</span><br><br>
+					<a href="mailto:angelhsu47@gmail.com"><button type="button" class="btn btn-primary btn-md">
+          				<span class="glyphicon glyphicon-envelope"></span> E-mail 
+        			</button></a><br>
+        			<a href="https://www.linkedin.com/in/angel-hsu-96b39a73"><button id="linked" type="button" class="btn btn-primary btn-md">
+          				<span class="glyphicon glyphicon-user"></span> LinkedIn 
+        			</button></a>
+					
+				
+				<!-- 
+					<form class="form-horizontal" name="myForm" id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 						<span id="alerts"></span>
 						<div class="form-group">
 							<label for="theirName">Name:</label>
@@ -134,31 +144,12 @@
   							<textarea class="form-control" rows="20" id="message" name="message"></textarea>
 						</div>
 						<button type="submit" class="btn btn-primary" name="submit" id="submit" value="Send" onsubmit="validate();">Send</button>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
 	</div>
-<?php 
-	if (isset($_GET['submit'])) { 
-		$to = "oreocookie38@gmail.com";
-		$subject = $_GET['subject'];
-		$message = $_GET['message'];
-		$headers = 'From: '. $_GET['email']  . "\r\n" .
-    'Reply-To: '. $_GET['email'] . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-		
-		try {
-			mail($to,$subject,$message,$headers);
-			echo("sent");
-		} catch (Exception $e) {
-			
-			echo($e->getMessage());
-		}
-		
-	}
 
-?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="main.js"></script>
 </body>

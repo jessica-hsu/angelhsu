@@ -113,12 +113,146 @@ nav {
 	background-image: url("img/bike.jpg");
 }
 
-#contact {
-	padding: 8%;
+#contact-form {
+	margin: 0;
+	font-size: 200%;
+	font-family: Sanchez;
+	color: white;
+	text-align: center;
+	height: 100%;
+	weight: 100%;
+	margin: 0;
+	padding: 5%;
+}
+
+#contact-form span {
+	opacity: 0.6;
+	background-color: black;
+	padding: 0.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width:900px) {
+	#summary-about {
+	font-family: Sanchez;
+	font-size: 300%;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	margin-left: 30%;
+	margin-right: 5%;
+
+}
+}
+
+@media screen and (max-width: 767px) {
+	
+.section {
+	padding: 7% 0;
+	margin: 0;
+	text-align: center;
+	background-color: #fbf8f6;
+	font-family: Droid Sans Mono, serif;
+	font-size: 130%;
+}
+
+#bg1, #bg2, #bg3, #bg4 {
+	background-image: none;
+}
+
+#bg1 {
+	background-color: #e18d18;}
+
+#about {
+	opacity: 0.50;
+  	filter: alpha(opacity=50);
+  	background-color: black;
+  	padding-top: 20%;
+  	padding-bottom: 10%;
+  	padding-left: 2%;
+  	padding-right: 2%;
+}
+
+#name {
+	text-align: center;
+	color: white;
+	font-family: Francois One;
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0 8%;
+	
+	
+}
+
+#summary-about {
+	font-family: Sanchez;
+	font-size: 110%;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 0;
+	width: 80%;
+}
+
+#bg2 {
+	background-color: teal;
+	opacity: 0.85;
+}
+
+
+#summary-work {
+	padding: 5%;
+	font-size: 100%;
+	font-family: Sanchez;
+	background-color: white;
+	opacity: 0.75;
+}
+
+#summary-work p {
+	font-size: 95%;
+	
+}
+
+#bg3 {
+	background-color: #aa81ee;
+}
+
+#publication {
+	text-align: center;
+	font-size: 100%;
+	font-family: Sanchez;
+	padding: 5%;
+	background-color: white;
+	opacity: 0.60;
+}
+
+#publication p {
+	font-size: 100%;
+}
+
+#bg4 {
+	background-color: #9edb74;
 }
 
 #contact-form {
-	opacity: 0.7;
 	margin: 0;
+	font-size: 130%;
+	font-family: Sanchez;
+	color: white;
+	text-align: center;
+	height: 100%;
+	weight: 100%;
+	margin: 0;
+	padding: 5%;
+}
+
+#contact-form span {
+	opacity: 1;
+	background-color: transparent;
+}
+	
+#linked {
+	display: none;
+}
+	
 }
 
