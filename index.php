@@ -66,7 +66,7 @@
 						Became member of Association for the Tutoring Profession as of September 2015.
 						<br></p>
 					Peer Facilitator, Emory Sexual Assault Peer Advocate (SAPA)<br>
-						<p>Atlanta, GA (Feb '14 - May '16)<br>trained on how to provide support for sexual assault survivors at Emory. 
+						<p>Atlanta, GA (Feb '14 - May '16)<br>Trained on how to provide support for sexual assault survivors at Emory. 
 						 Attended weekly Continued Education Meetings on sexual assault prevention and education. 
 						 Led SAPA 101 Trainings in order to teach the student body on how to support survivors. 
 						 Interviewed new SAPA advocates. Attended RespectCon 2016, a conference on sexual violence through a social justice lens.
